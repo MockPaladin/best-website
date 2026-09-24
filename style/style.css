@@ -1,0 +1,21 @@
+:root {
+    --logistics-gray: #181818;
+    --logistics-red: #A6192E;
+}
+
+* {
+    background-color: var(--logistics-gray);
+}
+
+img {
+    background-color: transparent;
+}
+
+header {
+    background-color: var(--logistics-red);
+}
+
+p {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
