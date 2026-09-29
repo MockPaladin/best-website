@@ -12,7 +12,16 @@ img {
 }
 
 header {
+    height: 80px;
+    display: flex;
+    align-items: center;
     background-color: var(--logistics-red);
+}
+
+header img {
+    height: 64px;
+    width: auto;
+    display: block;
 }
 
 p {
