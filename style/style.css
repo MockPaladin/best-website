@@ -12,14 +12,16 @@ img {
 }
 
 header {
+    padding: 10px;
     height: 80px;
     display: flex;
     align-items: center;
     background-color: var(--logistics-red);
 }
 
-header img {
-    height: 64px;
+header a, header img {
+    background-color: inherit;
+    height: 80px;
     width: auto;
     display: block;
 }
