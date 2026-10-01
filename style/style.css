@@ -13,20 +13,24 @@ img {
 
 header {
     padding: 10px;
+    gap: clamp(10px, 15px, 20px);
     height: 80px;
     display: flex;
     align-items: center;
     background-color: var(--logistics-red);
 }
 
-header a, header img {
+header a,
+header img {
     background-color: inherit;
     height: 80px;
     width: auto;
     display: block;
 }
 
-p {
+p,
+h1 {
+    background-color: inherit;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
