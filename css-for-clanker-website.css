@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+.video[data-astro-cid-7qzxku2k] {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--surface-2);
+  background: #000
+}
+.video[data-astro-cid-7qzxku2k] iframe[data-astro-cid-7qzxku2k] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0
+}
+.hero[data-astro-cid-j7pv25f6] {
+  padding: 7rem 0 4rem;
+  position: relative;
+  background: linear-gradient(180deg, rgba(172, 8, 8, .62) 0%, rgba(122, 5, 5, .86) 68%, var(--bg) 100%), url(/photos/team-trophy.jpg) center 35% / cover, url(/photos/unnamed-4.jpg) center 30% / cover
+}
+.hero-inner[data-astro-cid-j7pv25f6] {
+  display: grid;
+  gap: 1.2rem;
+  justify-items: start
+}
+.hero[data-astro-cid-j7pv25f6] h1[data-astro-cid-j7pv25f6] {
+  margin: 0;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, .5)
+}
+.hero[data-astro-cid-j7pv25f6] h1[data-astro-cid-j7pv25f6] span[data-astro-cid-j7pv25f6] {
+  color: var(--accent)
+}
+.hero[data-astro-cid-j7pv25f6] .lead[data-astro-cid-j7pv25f6] {
+  color: var(--text);
+  margin: 0
+}
+.countdown[data-astro-cid-j7pv25f6] {
+  margin-top: 1rem;
+  background: #111111e0
+}
+.countdown[data-astro-cid-j7pv25f6] .tag[data-astro-cid-j7pv25f6] {
+  margin-bottom: .5rem
+}
+.digits[data-astro-cid-j7pv25f6] {
+  display: flex;
+  gap: 1.5rem
+}
+.digits[data-astro-cid-j7pv25f6] div[data-astro-cid-j7pv25f6] {
+  display: flex;
+  flex-direction: column
+}
+.digits[data-astro-cid-j7pv25f6] b[data-astro-cid-j7pv25f6] {
+  font-family: var(--display);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--accent-2)
+}
+.digits[data-astro-cid-j7pv25f6] small[data-astro-cid-j7pv25f6] {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted)
+}
+.strip[data-astro-cid-j7pv25f6] {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  border-block: 3px solid var(--accent)
+}
+.strip[data-astro-cid-j7pv25f6] img[data-astro-cid-j7pv25f6] {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05)
+}
+.parts[data-astro-cid-j7pv25f6] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line)
+}
+.parts[data-astro-cid-j7pv25f6] li[data-astro-cid-j7pv25f6] {
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline
+}
+.parts[data-astro-cid-j7pv25f6] h3[data-astro-cid-j7pv25f6] {
+  margin: 0;
+  color: var(--accent)
+}
+.parts[data-astro-cid-j7pv25f6] p[data-astro-cid-j7pv25f6] {
+  margin: 0;
+  color: var(--muted)
+}
+@media(max-width: 520px) {
+  .parts[data-astro-cid-j7pv25f6] li[data-astro-cid-j7pv25f6] {
+    grid-template-columns: 1fr;
+    gap: .2rem
+  }
+}
+.cta-band[data-astro-cid-j7pv25f6] {
+  background: linear-gradient(135deg, var(--red) 0%, var(--red-deep) 100%);
+  border-block: 3px solid var(--accent)
+}
+.cta-band[data-astro-cid-j7pv25f6] .tag[data-astro-cid-j7pv25f6], .cta-band[data-astro-cid-j7pv25f6] .lead[data-astro-cid-j7pv25f6] {
+  color: var(--text)
+}
+.cta-band[data-astro-cid-j7pv25f6] .tag[data-astro-cid-j7pv25f6]:after {
+  background: #ffffff59
+}
+.cta-band[data-astro-cid-j7pv25f6] .btn[data-astro-cid-j7pv25f6].ghost:hover {
+  background: #fff;
+  color: var(--red);
+  border-color: #fff
+}
