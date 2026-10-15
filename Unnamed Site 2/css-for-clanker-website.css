@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+:root {
+    --bg: #181818;
+    --surface: #111111;
+    --surface-2: #262626;
+    --red: #AC0808;
+    --red-deep: #7A0505;
+    --line: rgba(227, 177, 42, .24);
+    --grid: rgba(227, 177, 42, .06);
+    --text: #ffffff;
+    --muted: #c9c9c9;
+    --accent: #E3B12A;
+    --accent-2: #F5D06B;
+    --on-accent: #111111;
+    --radius: 4px;
+    --max: 1120px;
+    --display: "Barlow Condensed", "Oswald", Impact, system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    font: 17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    background-color: var(--bg);
+    background-image: linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size: 32px 32px
+}
+
+a {
+    color: var(--accent-2)
+}
+
+h1,h2,h3 {
+    font-family: var(--display);
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    line-height: 1.05;
+    margin: 0 0 .5em
+}
+
+h1 {
+    font-size: clamp(2.8rem,9vw,5.5rem);
+    font-weight: 800
+}
+
+h2 {
+    font-size: clamp(2rem,5vw,3rem);
+    font-weight: 700
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 700
+}
+
+.wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 16px
+}
+
+section {
+    padding: 3.5rem 0
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: var(--muted);
+    max-width: 40em
+}
+
+.eyebrow,.tag {
+    font-family: var(--mono);
+    color: var(--accent);
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin: 0 0 .75rem;
+    display: flex;
+    align-items: center;
+    gap: .75rem
+}
+
+.eyebrow:after,.tag:after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+    max-width: 220px
+}
+
+.btn {
+    display: inline-block;
+    padding: .75rem 1.4rem;
+    border-radius: 2px;
+    font-family: var(--display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    background: var(--accent);
+    color: var(--on-accent);
+    text-decoration: none;
+    margin: .25rem .5rem .25rem 0;
+    border: 2px solid var(--accent);
+    transition: transform .12s,background .12s
+}
+
+.btn:hover {
+    transform: translate(-2px,-2px);
+    box-shadow: 4px 4px 0 var(--red)
+}
+
+.btn.ghost {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--text)
+}
+
+.btn.ghost:hover {
+    background: var(--red);
+    border-color: var(--red);
+    box-shadow: 4px 4px 0 var(--accent)
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr))
+}
+
+.card {
+    position: relative;
+    background: #111111e6;
+    padding: 1.3rem;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--red);
+    border-radius: var(--radius)
+}
+
+.card:before,.card:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--accent)
+}
+
+.card:before {
+    top: -3px;
+    left: -2px;
+    border-right: 0;
+    border-bottom: 0
+}
+
+.card:after {
+    bottom: -2px;
+    right: -2px;
+    border-left: 0;
+    border-top: 0
+}
+
+.card h3 {
+    font-size: 1.35rem;
+    color: var(--text)
+}
+
+.card p {
+    margin: 0;
+    color: var(--muted)
+}
+
+.todo {
+    color: var(--accent)
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: .9rem
+}
+
+th {
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .75rem
+}
+
+th,td {
+    text-align: left;
+    padding: .7rem .6rem;
+    border-bottom: 1px solid var(--line)
+}
+
+.skip {
+    position: absolute;
+    left: -999px
+}
+
+.skip:focus {
+    left: 8px;
+    top: 8px;
+    background: var(--accent);
+    color: var(--on-accent);
+    padding: .5rem;
+    z-index: 10
+}
+
+:focus-visible {
+    outline: 3px solid var(--accent-2);
+    outline-offset: 2px
+}
+
+@media(prefers-reduced-motion:reduce) {
+    * {
+        transition: none!important;
+        scroll-behavior: auto!important
+    }
+}
+
+header[data-astro-cid-sckkx6r4] {
+    background: #111111f0;
+    backdrop-filter: blur(8px);
+    border-bottom: 3px solid var(--red);
+    position: sticky;
+    top: 0;
+    z-index: 5
+}
+
+.bar[data-astro-cid-sckkx6r4] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem 1rem;
+    padding-top: .6rem;
+    padding-bottom: .6rem
+}
+
+.brand[data-astro-cid-sckkx6r4] {
+    display: block;
+    line-height: 0
+}
+
+.brand[data-astro-cid-sckkx6r4] img[data-astro-cid-sckkx6r4] {
+    height: 46px;
+    width: auto;
+    display: block
+}
+
+ul[data-astro-cid-sckkx6r4] {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .25rem 1.1rem;
+    margin: 0;
+    padding: 0
+}
+
+nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4] {
+    color: var(--muted);
+    text-decoration: none;
+    font-family: var(--mono);
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: .25rem 0;
+    border-bottom: 2px solid transparent
+}
+
+nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover,nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4][aria-current=page] {
+    color: var(--text);
+    border-bottom-color: var(--accent)
+}
+
+nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4].cta {
+    background: var(--accent);
+    color: var(--on-accent);
+    padding: .4rem .8rem;
+    border-radius: 2px;
+    border: 0
+}
+
+nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4].cta:hover {
+    background: var(--accent-2)
+}
+
+footer[data-astro-cid-sckkx6r4] {
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+    padding: 2rem 0;
+    color: var(--muted)
+}
+
+.small[data-astro-cid-sckkx6r4] {
+    font-size: .85rem
+}
