@@ -318,8 +318,6 @@ body {
 .social .social_icon img {
 	width: 80%;
 }
-.container .secondary_header {
-}
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
@@ -469,6 +467,4 @@ body {
 .container .social .social_icon:hover {
 	cursor: pointer;
 	opacity: 0.5;
-}
-#menu {
 }

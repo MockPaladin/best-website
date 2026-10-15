@@ -29,7 +29,10 @@ header img {
 }
 
 header h1 {
-    height: 30px;
+    font-size: 30px;
+    height: 30px; /* Headers always align in top of their rendering
+                     box, so force them to have a rendering box the
+                     same size as their height. */
 }
 
 h1 {
