@@ -9,4 +9,6 @@ Team websites should include
 
 ### Page outline:
 - Main page (index.html)
-- Community leader/
+- Community leader/person-in-club testimonials
+- GLORP
+- BEST thingamajig in index.html
