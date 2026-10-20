@@ -4,6 +4,7 @@
 :root {
     --gray: #181818;
     --red: #A6192E;
+    --gold: #F5D06B;
     --selection: #000888;
     --font: 'Montserrat',sans-serif;
     --big-font: 'Bernoru', sans-serif;
@@ -85,7 +86,7 @@ nav {
 
     a:hover {
         text-decoration: underline;
-        background-color: gold;
+        background-color: var(--gold);
         color: var(--gray);
     }
 
