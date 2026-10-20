@@ -4,6 +4,7 @@
 :root {
     --gray: #181818;
     --red: #A6192E;
+    --selection: #000888;
     --font: 'Montserrat',sans-serif;
     --big-font: 'Bernoru', sans-serif;
 }
@@ -12,7 +13,13 @@
     background-color: var(--gray);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
+    border-radius: 0px 0px 5px 5px;
     padding: 10px;
     gap: 15px;
     height: auto;
@@ -38,6 +45,10 @@ header {
         height: 30px;
         line-height: 1;
         margin: 0;
+    }
+
+    h1::selection, h1::-moz-selection {
+        background-color: var(--selection);
     }
 }
 
@@ -70,16 +81,21 @@ nav {
         text-decoration: none;
         color: white;
         transition: background-color 0.5s ease, color 0.5s ease, text-decoration 0.75s ease;
-
-        /*a {
-            all: inherit;
-        }*/
     }
 
     a:hover {
         text-decoration: underline;
         background-color: gold;
         color: var(--gray);
+    }
+
+    a:hover::selection, a:hover::-moz-selection {
+        text-decoration: none;
+    }
+
+    a::selection, a::-moz-selection {
+        color: white;
+        background-color: var(--selection);
     }
 }
 
