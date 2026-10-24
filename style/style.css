@@ -73,6 +73,12 @@ p {
     color: white;
 }
 
+figcaption {
+    font-family: var(--font);
+    background-color: inherit;
+    color: white;
+}
+
 nav {
     flex-wrap: wrap;
     display: flex;
