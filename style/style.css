@@ -67,6 +67,12 @@ h2 {
     color: white;
 }
 
+h3 {
+    font-family: var(--font);
+    background-color: inherit;
+    color: white;
+}
+
 p {
     font-family: var(--font);
     background-color: inherit;
