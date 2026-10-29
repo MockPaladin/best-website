@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/bernoru');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
     --gray: #181818;
@@ -7,6 +8,7 @@
     --gold: #F5D06B;
     --selection: #000888;
     --font: 'Montserrat', sans-serif;
+    --testimonial: 'Courier Prime', monospace;
     --big-font: 'Bernoru', sans-serif;
 }
 
@@ -77,6 +79,10 @@ p {
     font-family: var(--font);
     background-color: inherit;
     color: white;
+}
+
+.testimonial-text {
+    font-family: var(--testimonial);
 }
 
 figcaption {
