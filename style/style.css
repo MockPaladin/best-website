@@ -174,6 +174,30 @@ nav {
     background-color: inherit;
 }
 
+.video-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-container {
+    flex: 1;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.video-text {
+    flex: 1;
+}
+
 @media (max-width: 700px) {
     header {
         flex-wrap: wrap;
