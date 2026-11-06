@@ -89,6 +89,8 @@ figcaption {
     font-family: var(--font);
     background-color: inherit;
     color: white;
+    height: 10px;
+    width: 380px;
 }
 
 nav {
