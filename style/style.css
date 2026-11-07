@@ -148,6 +148,14 @@ nav {
     }
 }
 
+footer {
+    background-color: var(--red);
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
 @container (max-width: 400px) {
     nav ul {
         flex-direction: column;
