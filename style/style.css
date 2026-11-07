@@ -215,7 +215,7 @@ footer {
 	font-family: var(--font);
     font-weight: 600;
     font-size: 15px;
-    border: 2px solid var(--red);
+    /*border: 2px solid var(--red);*/
     border-radius: 5px;
     transition: background-color 0.2s ease, 
                 color 0.2s ease, 
