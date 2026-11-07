@@ -151,7 +151,7 @@ nav {
 footer {
     background-color: var(--red);
 
-    p, p.copyright {
+    p {
         padding: 5px;
         margin-bottom: 0;
         font-size: 0.8em;
