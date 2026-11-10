@@ -152,6 +152,8 @@ footer {
     background-color: var(--red);
 
     p {
+        padding: 5px;
+        margin-bottom: 0;
         font-size: 0.8em;
     }
 }
@@ -169,6 +171,15 @@ footer {
     align-items: center;
     justify-content: flex-start;
     gap: inherit;
+    background-color: inherit;
+}
+
+.align-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     background-color: inherit;
 }
 
